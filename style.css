@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+        }
+.container1-2{
+     width: 100%;
+     height: 100vh;
+     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(code.png);
+     background-position: center;
+     background-size:  cover;
+     padding-left: 5%;
+     padding-right: 5%;
+     box-sizing: border-box;
+     position: fixed;
+        }
+    .container2{
+            width: 100%;
+            height: 100vh;
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://media.istockphoto.com/id/1224373316/photo/group-of-friends-having-fun-playing-video-games-at-home.jpg?s=612x612&w=0&k=20&c=r9gcsPqpY8XCSzzc23XT97iT8AJ8jFdkS3f0_Br8EGw=);
+            background-position: center;
+            background-size:  cover;
+            background-attachment: fixed;
+            padding-left: 5%;
+            padding-right: 5%;
+            box-sizing: border-box;
+            position: relative;
+      }
+.container3{
+     width: 100%;
+     height: 100vh;
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(IT-sikkerhed.png);
+     background-position: center;
+     background-size:  cover;
+     padding-left: 5%;
+     padding-right: 5%;
+     box-sizing: border-box;
+     position: fixed;
+}
+.container4{
+     width: 100%;
+     height: 100vh;
+     background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(passwordimage.png);
+     background-position: center;
+     background-size:  cover;
+     padding-left: 5%;
+     padding-right: 5%;
+     box-sizing: border-box;
+     position: fixed;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+    cursor:pointer;
+}
+.menu-icon{
+    width: 100px;
+    margin-left: 40px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    position: relative;
+    }
+ nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        position:absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;  
+        transition: width 0.3s;
+    }
+ nav ul li a:hover::after{
+     width: 90%;
+    }
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center; 
+}
+.row-IT{
+    display: flex;
+    height: 50%;
+    align-items: center; 
+}
+.row-IT2{
+    display: flex;
+    height: 30%;
+    align-items: center; 
+}
+.col{
+    flex-basis: 50%; 
+}
+.col-IT{
+    flex-basis: 60%; 
+}
+h1{
+    color:#fff;
+    font-size: 100px;
+}
+
+p{
+    color:#fff;
+    font-size: 17px;
+    line-height: 20px;
+}
+p1{
+    color:black;
+    line-height: 20px;
+}
+p2{
+    color:#fff;
+    font-size: 17px;
+    line-height: 20px;
+}
+.CardTekst{
+    opacity: 0;
+}
+.CardTekst:hover{
+    opacity: 1;
+}
+.cardD1:hover{
+    background: none;
+    background-color: white;
+    opacity: 1;
+}
+.cardD2:hover{
+    background: none;
+    background-color: white;
+    opacity: 1;
+}
+.card{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 12px 25px;
+    box-sizing:border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 1s;
+}
+.cardP1{
+    width: 440px;
+    height: 506px;
+    background-image: url(IMG_2422.JPG);
+    margin-left: 10%;
+}
+.cardD1{
+    width: 330px;
+    height: 300px;
+    background-image: url(htmlimage.png);
+}
+.cardD2{
+    width: 330px;
+    height: 300px;
+    background-image: url(DivImage.png);
+}
+.cardIT1{
+    width: 450px;
+    height: 370px;
+    margin-left: 70px;
+    margin-right: 20px;
+    background-image: url(cookie.png);
+    display: inline-block;
+    border-radius: 10px;
+    padding: 12px 25px;
+    box-sizing:border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    opacity: 0.7;
+}
+.cardIT2{
+    width: 600px;
+    height: 250px;
+    margin-left: 0px;
+    margin-right: 20px;
+    background-image: url(passwordbilled.png);
+    display: inline-block;
+    border-radius: 10px;
+    padding: 12px 25px;
+    box-sizing:border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    opacity: 0.7;
+}
+.cardIT3{
+    width: 600px;
+    height: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url(kryptografiimage.png);
+    display: inline-block;
+    border-radius: 10px;
+    padding: 12px 25px;
+    box-sizing:border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    opacity: 0.7;
+}
+.card:hover{
+    transform: translate(-6px, -12px);
+    background-image: url(IMG_2423.JPG)
+}
+.cardIT:hover{
+    transform: translate(-6px, -12px);
+    background-image: none;
+    background-color: white;
+    opacity: 1;
+}
+
+.card p{
+    text-shadow: 0 0 5px #000;
+    font-size: 8px; 
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background-color: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.loginbox{
+    width: 320px;
+    height: 220px;
+    background: #fff ;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding: 70px 30px;
+}
+.lockicon{
+    width: 100x;
+    height: 100px;
+    position: absolute;
+    top: -45px;
+    left: calc(50% - 50px)
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    color:#000;
+    font-weight:bold;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.loginbox input[type="text"], input[type="password"]{
+    border:none;
+    outline: none;
+    background: transparent; 
+    border-bottom: 1px solid #fff;
+    height: 40px; 
+    color: #000;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none; 
+    height: 30px;
+    color: #fff;
+    background: #000;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #F7932E;
+    color: #000;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000;    
+}
+.loginbox a[type="hover"]:hover{
+    color: #F7932E;
+}
+h2{
+    margin-bottom: 15px;
+}
+.Kartotekskort{
+    border-bottom: 30px solid white;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 35%
+}
+.password2{
+    position: relative;
+    top: -6px;
+}
+
+
+
+
+
+
+
+

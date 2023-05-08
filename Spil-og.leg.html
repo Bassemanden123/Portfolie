@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Billider/">
+    <link rel="stylesheet" href="prism.css">
+<style>
+.col{
+ flex-basis: 60%;
+ }
+.col-2{
+ flex-basis: 50%;
+}
+.col-3{
+    flex-basis: 50%;
+    position: relative;
+    right: -60px;
+    }
+    .col-4{
+    flex-basis: 80%;
+    }
+.row{
+     display: flex;
+     height: 88%;
+     align-items: center; 
+    }
+    .row-2{
+    padding-bottom: 10%;
+    display: flex;
+    height: 280px;
+    padding-top: 5%;
+    }
+    .row-3{
+    padding-top: 30px;
+    display: flex;
+    height: 380px;
+    padding-bottom: 30px;
+    }
+    .row-4{
+      padding-top: 60px;
+     display: flex;
+     height: 350px;
+     padding-bottom: 10px;
+    }
+    h1-2{
+    color:black;
+    font-size: 70px;
+    }
+    p{
+      line-height: 1.5;
+      color: black;
+    }
+#image{
+    height: 400px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+#Af{
+    position: relative;
+    right: -30px;
+}
+#makeymakey{
+    position: relative;
+    right: -30px;
+}
+</style>
+</head>
+<body>
+    <div class="container2"> 
+        <div class="Kartotekskort"><center><img src="Pil.png" class="Kartotekskort-Pil"></center></div>
+        <div class="navbar">
+            <a href="https://www.google.com/?safe=active&ssui=on">
+             <img src="logo white.png" class="logo" href="index.html">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Portfolie</a></li>
+                    <li><a href="Hjemmeside.html">Min første hjemmeside</a></li>
+                    <li><a href="Password.html">IT-sikkerhed</a></li>
+                    <li><a href="Spil-og.leg.html">Spil, leg og sam...</a></li>
+                    <li><a href="AstroPiPortfoli.html">Astro Pi</a></li>
+                    <li><a href="Database.html">Databaser</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" class="menu-icon">
+        </div>
+
+        <div class="row">
+            <div class="col">
+               <h1>Spil, leg og sammarbejde </h1>
+                <p style="color:#fff; font-size: 17px; line-height: 20px;">   </p>
+           </div>
+        </div>
+
+        <div class="row-2">
+            <div class="col-2">
+                <h1-2>Introduktion</h1-2>
+                <p>Dansk idrætsforbund er stærkt bekymret over en ny undersøgelse, der viser, at 3 ud af 4 børn og unge bevæger sig for lidt i hverdagen. De vil gerne motivere unge mennesker til at bevæge sig mere og til at være mere sociale, når de spiller computerspil. Med udgangspunkt i dette problem, skulle vi dermed udvikle et spil i p5, der indeholdt følgende elementer:</p><br><br>
+                <p>&bull; Kan spilles af to eller flere personer, der fysisk er i nærheden af hinanden.</p><br>
+                <p>&bull; Involverer et samarbejdende eller konkurrerende element, gerne inspireret af sport.</p><br>
+                <p>&bull; Styres med Makey Makey og ikke direkte fra computeren.</p><br>
+            </div>
+            <div class="col-2" >
+                <img id="makeymakey" src="https://www.mouser.ee/images/marketingid/2018/img/137864388.png?v=033123.1149">
+            </div>
+            <h4 id="Af"><em>Af Bastian, <br>Ann-Sophie, Tjalfe  og Idil</em></h4>
+        </div>
+
+        <div class="row-3">
+            <center><img id="image" src="Spil&leg.png"></center>
+            <div class="col-3">
+                <h1-2>Ideen bag spillet </h1-2>
+                <p>Vores ide til sådan et interaktivt spil, der indeholder disse elementer blev inspireret at spillet "twister", hvor spillere skal placere hænder og fødder på en plade, alt efter hvad der bliver udtrukket. I stedet for at dreje et hjul der viser hvor man skal placere hånden/foden, ville dette blive vist på skærmen, hvorefter der sættes en timer, der placerer et tidspres på spilleren. Samtidigt registreres der på skærmen, hvorvidt spilleren har placeret sin hånd/fod korrekt. Her ville der være brug for 2 eller flere spillere, da de skal samarbejde om at placere hænder/fødder korrekt på pladen, for at komme til næste bane. Spillet er for besværligt at spille på en computer, og derfor er Makey Makey nødvendigt til at spille spillet. Nedenfor er vist et billede af Bastian der spiller og hvad der vises på skærmen under spillet:</p>
+            </div>
+        </div>
+
+        <div class="row-4">
+            <div class="col-4">
+                <h1-2>Beskrivelse af kodestumper</h1-2>
+                <p>Nedenfor ses et udsnit af vores kode samt en ilustration. Her beskrives den måde hvorpå programmet kunne registrere hvorvidt spilleren har placeret sin hånd/fod korrekt på pladen. Cirklerne havde hvert sit "nummer" afhængigt af deres plads i kolonnen/rækkken. 
+                    <br>På cirklerne vil der være vist et billede af enten en højre/venstre fod/hånd og placeringen af disse er randomiseret - i rækkener fra 0-4 og i kolonnerne fra 0-3. Ved if-statement "if(keyIsDown(UP_ARROW))" vil den første røde cirkel med nummeret (0,0) blive farvet sort, hvis et af billederne er på denne cirkel - et af billederne har nummeret (0,0) - og tasten "UP_ARROW" trykkes ned. Dette vil ikke ændre værdien af "d" så spillet fortsætter ("d" er til start sat lig nul, og så længe "d = 0" fortsætter spillet). Hvis der ikke er et billede der har værdien (0,0), vil d = 1, og spillet stoppes med "Game Over". Dette gentages for hver cirkel hvor kolonne- og rækkenummer ændres samt tasten der skal trykkes ned.</p>
+            </div>
+        </div>
+
+        <pre><code class="language-js line-numbers">
+if(keyIsDown(UP_ARROW)){
+ circle(150,250,60);
+ if (nhåndh == 0 && mhåndh == 0 || nhåndv == 0 && mhåndv == 0 || nfodh == 0 && mfodh == 0 || nfodv == 0 && mfodv == 0){d = 0}
+             
+            else{d = 1;}
+}
+if(keyIsDown(DOWN_ARROW)){
+ fill(0)
+ circle(220,250,60);
+ if (nhåndh == 1 && mhåndh == 0 || nhåndv == 1 && mhåndv == 0 || nfodh == 1 && mfodh == 0 || nfodv == 1 && mfodv == 0){d = 0}
+            
+    else{d = 1;}
+} </code></pre>
+
+       <img id="image3" src="Spil-ilustration.png" style="height: 300px;"><br><br><br><br>
+
+        <center><h1-2>Flowchart</h1-2><br><img style="height: 600px;" src="FLOWtwis.png"></center>
+
+        <br><br><br>
+        <script src="prism.js"></script>
+    </div>
+</body>
